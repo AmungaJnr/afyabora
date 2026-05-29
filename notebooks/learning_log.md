@@ -12,7 +12,7 @@ Completed sprints:
   Key finding: basic SIR model misses seasonal forcing - explains why AfyaBora 
   needs climate inputs in Layer 2.
 
-Next sprint: Sprint 3 — merging climate data with flu data and computing 
+Next sprint: Sprint 3 - merging climate data with flu data and computing 
 correlations.
 
 Environment: VS Code, Python 3.11, venv at C:\Users\jnram\afyabora\venv
@@ -95,7 +95,7 @@ Sprint 4 will address this lag effect.
 Sprints 1-3 mark the end of AB Model 0.
 
 
-## Sprint 4 — XGBoost forecasting model
+## Sprint 4 - XGBoost forecasting model
 
 **What I built:** 
 Trained my model using XGBoost for forecasting. Split the data into a training and testing set. 
