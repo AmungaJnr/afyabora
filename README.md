@@ -1,4 +1,4 @@
-# AfyaBora — AI-Powered Predictive Public Health Platform
+# AfyaBora - AI-Powered Predictive Public Health Platform
 
 **Founder:** Amunga Junior  
 **Status:** Research prototype v0.1  
@@ -34,16 +34,16 @@ afyabora/
 
 ## What has been built so far
 
-**Sprint 1 — FluWatch data pipeline**  
+**Sprint 1 - FluWatch data pipeline**  
 Loads and cleans PHAC FluWatch influenza surveillance data (2014–2017). Plots national and provincial epi curves.
 
-**Sprint 2 — SIR epidemiological model**  
+**Sprint 2 - SIR epidemiological model**  
 Implements and fits a Susceptible-Infectious-Recovered model to the  2014-2015 flu season. Derives R₀ and identifies seasonal forcing as a key limitation of the basic SIR model.
 
-**Sprint 3 — Climate-health correlation**  
+**Sprint 3 - Climate-health correlation**  
 Merges ECCC Toronto climate data with flu surveillance data. Finds r = -0.66 (p < 0.001) - strong statistically significant negative correlation between temperature and flu cases. Confirms AfyaBora's climate-health hypothesis with real data.
 
-**Sprint 4 — XGBoost forecasting model**  
+**Sprint 4 - XGBoost forecasting model**  
 Trains an XGBoost model on engineered lag features to forecast weekly flu case counts. Achieves MAE = 226 cases, MAPE = 41.3% on the 2016-2017 season. Identifies flu_lag1 as the dominant predictor (72.8% feature importance). Operational utility confirmed - statistical 
 accuracy limited by small training dataset.
 
@@ -54,7 +54,7 @@ accuracy limited by small training dataset.
 - Temperature and flu cases: r = -0.66, p < 0.001
 - Model 1 peak timing: correct
 - Model 1 MAPE: 41.3% (target: <20% with more training data)
-- Primary limitation: 3 seasons of training data — expanding to 
+- Primary limitation: 3 seasons of training data - expanding to 
   10+ seasons is the highest-priority improvement
 
 ---
