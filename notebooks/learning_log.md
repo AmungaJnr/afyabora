@@ -120,3 +120,26 @@ How this can be rectified. Wondering if I need use an entirely new data.
 - Feature importance  - what the model relied on most
 - Autoregressive models  - predicting a variable from its own past
 - Statistical accuracy vs operational utility
+
+# AB Model 1, v0.1
+## Sprint 5 — Heatwave hospitalization predictor
+
+**What I built:**
+
+**Key finding:**
+
+**What clicked:**
+
+**Still fuzzy:**
+- Understanding the code for plotting the top and bottom label
+- What ticker is and ticks, ticklabesl
+- What axvspan, axhline are and what they do
+
+**Concepts learned:**
+- Classification vs regression - predicting categories not numbers
+- Confusion matrix -  how to read true positives and false negatives
+- Precision vs recall - what each measures and when each matters
+- Class imbalance - why Critical is hard to predict with no training examples
+- Risk labelling - using domain knowledge to create clinically meaningful categories
+- Operational utility vs statistical accuracy - the 96% accuracy hides the Critical failure
+- Early warning escalation - how the Moderate→High→Critical sequence saves lives

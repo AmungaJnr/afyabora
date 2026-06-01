@@ -1,0 +1,1 @@
+{"overall_accuracy": 0.96, "low_recall": 1.0, "moderate_recall": 0.97, "high_recall": 0.18, "critical_recall": 0.0, "key_finding": "Model detects heat dome as High not Critical - no Critical examples in training data"}
