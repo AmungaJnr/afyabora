@@ -121,19 +121,29 @@ How this can be rectified. Wondering if I need use an entirely new data.
 - Autoregressive models  - predicting a variable from its own past
 - Statistical accuracy vs operational utility
 
-# AB Model 1, v0.1
-## Sprint 5 — Heatwave hospitalization predictor
+# AB Model 2, v0.1
+## Sprint 5 - Heatwave hospitalization predictor
 
 **What I built:**
+ A classification model that is able to create labels based off temperature readings in order to raise alerts if need be. Data was pulled from British Columbia (BC) mainly due to the 2021 heat dome that serves as a good data source to trace such a factor.  
 
 **Key finding:**
+Due to data quality, a lack of enough Critical days lead to the model incorrectly misdiagnosing those days as High. Eventhough this was wrong, the model showed promised since it did not label it as Low or Moderate. With more Critical reading, it is bound too be better trained to identify Critical.
+
+The model did poorly in diagnosing High days, a problem that will need to be looked into.
+
+What the model did superbly is that it is able to almost perfectly trace the Low and Moderate days. This makes the model critical as prevention is better than cure and this model is able to detect early signs.
 
 **What clicked:**
+- How the classification took place.
+- The readings off the chart and visuals; matched the data inputted.
+- Why the model fails in reading Critical and what to do to better that.
 
 **Still fuzzy:**
 - Understanding the code for plotting the top and bottom label
 - What ticker is and ticks, ticklabesl
 - What axvspan, axhline are and what they do
+- The implications of precision and recall
 
 **Concepts learned:**
 - Classification vs regression - predicting categories not numbers
@@ -142,4 +152,4 @@ How this can be rectified. Wondering if I need use an entirely new data.
 - Class imbalance - why Critical is hard to predict with no training examples
 - Risk labelling - using domain knowledge to create clinically meaningful categories
 - Operational utility vs statistical accuracy - the 96% accuracy hides the Critical failure
-- Early warning escalation - how the Moderate→High→Critical sequence saves lives
+- Early warning escalation - how the Low → Moderate → High → Critical sequence saves lives
